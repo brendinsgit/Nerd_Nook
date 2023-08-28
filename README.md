@@ -34,9 +34,13 @@ As a user...
 
 
   
-## Wireframes / Screenshots
-![Project01_Wireframe](https://github.com/brendinsgit/Nerd_Nook)
+## Wireframes / ERD
 
+![Home_Page_Wireframe](https://github.com/brendinsgit/Nerd_Nook/assets/139824521/9105dd45-5f17-4172-a7f7-985a665740f9)
+![About_Page_Wireframe](https://github.com/brendinsgit/Nerd_Nook/assets/139824521/20f9f30d-3565-46a8-b825-fd31827a67e8)
+![Contact_Page_Wireframe](https://github.com/brendinsgit/Nerd_Nook/assets/139824521/38878194-feba-47a9-a0bd-1e23220a4077)
+![Forum_Page_Wireframe](https://github.com/brendinsgit/Nerd_Nook/assets/139824521/b9932821-73c5-4c60-ad44-289b464d5683)
+![ERD_Screenshot](https://github.com/brendinsgit/Nerd_Nook/assets/139824521/208720e3-c86e-42c5-8bbb-1137138abe55)
 
 
 
