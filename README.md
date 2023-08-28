@@ -7,7 +7,7 @@ This project is an E-commerce website designed to simulate the sale of digital v
 ## Table of Contents
 
 - [User Stories](#user-stories)
-- [Wireframes / ERD](#wireframes-erd)
+- [Wireframes / ERD](#wireframes-and-erd)
 - [Technologies Used](#technologies-used)
 
 
@@ -34,7 +34,7 @@ As a user...
 
 
   
-## Wireframes / ERD
+## Wireframes and ERD
 
 ![Home_Page_Wireframe](https://github.com/brendinsgit/Nerd_Nook/assets/139824521/9105dd45-5f17-4172-a7f7-985a665740f9)
 ![About_Page_Wireframe](https://github.com/brendinsgit/Nerd_Nook/assets/139824521/20f9f30d-3565-46a8-b825-fd31827a67e8)
