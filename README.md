@@ -40,7 +40,8 @@ As a user...
 ![About_Page_Wireframe](https://github.com/brendinsgit/Nerd_Nook/assets/139824521/20f9f30d-3565-46a8-b825-fd31827a67e8)
 ![Contact_Page_Wireframe](https://github.com/brendinsgit/Nerd_Nook/assets/139824521/38878194-feba-47a9-a0bd-1e23220a4077)
 ![Forum_Page_Wireframe](https://github.com/brendinsgit/Nerd_Nook/assets/139824521/b9932821-73c5-4c60-ad44-289b464d5683)
-![ERD_Screenshot](https://github.com/brendinsgit/Nerd_Nook/assets/139824521/208720e3-c86e-42c5-8bbb-1137138abe55)
+![ERD_Screenshot](https://github.com/brendinsgit/Nerd_Nook/assets/139824521/90e9ed26-da61-4e9e-80d0-871d41bfeafb)
+
 
 
 
@@ -54,7 +55,14 @@ As a user...
 - ![Express.js](https://img.shields.io/badge/-Express.js-000000?logo=express&logoColor=white&style=flat)
 
 
+## Getting Started
 
+1. Clone this repository.
+2. Install dependencies using `npm install`.
+3. Set up your Google OAuth credentials.
+4. Configure your MongoDB connection.
+5. Run the application with `npm start`.
+6. Access the website in your browser.
 
 ## Contact
 
