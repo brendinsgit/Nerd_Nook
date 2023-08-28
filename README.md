@@ -1,4 +1,4 @@
-# # Nerd Nook
+## Nerd Nook
 
 This project is an E-commerce website designed to simulate the sale of digital video games. While it does not include actual payment functionality, it provides users with the ability to browse and "purchase" digital games, add them to their cart, leave reviews for games they've "bought," and participate in game-related discussions on a forum.
 
