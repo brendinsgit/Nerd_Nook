@@ -9,6 +9,7 @@ This project is an E-commerce website designed to simulate the sale of digital v
 - [User Stories](#user-stories)
 - [Wireframes and ERD](#wireframes-and-erd)
 - [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
 
 
 
