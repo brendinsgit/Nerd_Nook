@@ -41,7 +41,8 @@ As a user...
 ![About_Page_Wireframe](https://github.com/brendinsgit/Nerd_Nook/assets/139824521/20f9f30d-3565-46a8-b825-fd31827a67e8)
 ![Contact_Page_Wireframe](https://github.com/brendinsgit/Nerd_Nook/assets/139824521/38878194-feba-47a9-a0bd-1e23220a4077)
 ![Forum_Page_Wireframe](https://github.com/brendinsgit/Nerd_Nook/assets/139824521/b9932821-73c5-4c60-ad44-289b464d5683)
-[ERD_Screenshot.pdf](https://github.com/brendinsgit/Nerd_Nook/files/12464913/ERD_Screenshot.pdf)
+![Blank document](https://github.com/brendinsgit/Nerd_Nook/assets/139824521/41a9d853-1398-4dfe-ab89-143dc78b8e54)
+
 
 
 
