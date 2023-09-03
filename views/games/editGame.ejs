@@ -1,0 +1,41 @@
+<!-- views/games/editGame.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Game</title>
+    <style>
+        .edit-container {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            flex-direction: column;
+            top: 30vmin;
+            left: 50vmin;
+            width: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <% include ../partials/header %>
+    <div class="edit-container">
+        <h2>Edit Game</h2>
+        <form action="/games/edit/<%= game._id %>" method="POST">
+        
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" value="<%= game.title %>"><br>
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" value="<%= game.price %>">
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre" value="<%= game.genre %>">
+            <label for="developer">Developer:</label>
+            <input type="text" id="developer" name="developer" value="<%= game.developer %>">
+            <label for="publisher">Publisher:</label>
+            <input type="text" id="publisher" name="publisher" value="<%= game.publisher %>">
+
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+    <% include ../partials/footer %>
+</body>
+</html>

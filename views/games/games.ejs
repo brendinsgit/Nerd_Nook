@@ -1,0 +1,37 @@
+<!-- views/games/games.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+<body>
+    <% include ../partials/header %>
+
+    <div class="games-container">
+        <h2>Games</h2>
+        <ul>
+            <% games.forEach(function(game) { %>
+                <li>
+                    <h3><%= game.title %></h3>
+                    <p>Price: <%= game.price %></p>
+                    <p>Genre: <%= game.genre %></p>
+                    <p>Developer: <%= game.developer %></p>
+                    <p>Publisher: <%= game.publisher %></p>
+                    <!-- Display the delete button and edit button only for logged-in users -->
+                    <% if (user) { %>
+                        <form action="/games/delete/<%= game._id %>" method="POST">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button type="submit">Delete</button>
+                        </form>
+                        <!-- Add an edit button -->
+                        <form action="/games/edit/<%= game._id %>" method="GET">
+                            <button type="submit">Edit</button>
+                        </form>                        
+                    <% } %>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+
+    <% include ../partials/footer %>
+</body>
+</html>

@@ -1,0 +1,204 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+ 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+header {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+  background-color: #4831D4; 
+  color: #fff; 
+  text-align: left; 
+  padding: 20px;
+  margin: 0;
+  width: 100vw;
+  height: 8vmin;
+}
+
+h1 {
+  position: absolute;
+  left: 3vmin;
+  margin: 0;
+  font-size: 8vmin;
+  color: #CCF381;
+  font-family: 'VT323', sans-serif;
+}
+
+.topnav {
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+  background-color: #CCF381;
+  height: 7vmin;
+  border-radius: 2vmin;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  height: 100%;
+  font-family: 'Arvo', serif;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  border-radius: 0.3vmin;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.3vmin;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+#basket-pic {
+  position: relative;
+  margin-top: 8px;
+  right: -18vmin;
+  height: 5vmin;
+  width: 5vmin;
+}
+
+#form-container {
+  display: flex;
+  position: relative;
+  top: 15vmin;
+  justify-content: center;
+}
+
+#h2-form {
+  display: flex;
+  position: relative;
+  top: 15vmin;
+  justify-content: center;
+  margin-bottom: 3vmin;
+}
+
+ /* Contact Styling */
+
+
+.contact-container {
+  display: flex;
+  position: relative;
+  /* justify-content:flex-start */
+  
+}
+
+#contact-img {
+  position: relative;
+  max-width: 400px;
+  margin: 30vmin 0 0 10vmin;
+  justify-self: flex-start;
+}
+
+#contact-form {
+  position: relative;
+  border: 1px solid black;
+  max-width: 100px;
+  max-height: 100px;
+  top: 50vmin;
+  right: 0vmin;
+}
+
+
+/* Games Styling */
+
+.games-container {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  margin-top: 1vmin;
+  border: 1px solid blue;
+  height: 40vh;
+  width: 40vw;
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+.games-container>h2 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 2vmin;
+}
+
+.login {
+  display: flex;
+  position: relative;
+  margin-left: 3vmin;
+  margin-top: 8px;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  color: #CCF381;
+}
+
+.login img {
+  height: 30px;
+}
+
+#logout {
+  display: flex;
+  position: relative;
+  margin-left: 3vmin;
+  margin-top: 8px;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  color: #CCF381;
+}
+
+#logout-img {
+  height: 30px;
+}
+
+#nerd-nook {
+  left: 0;
+}

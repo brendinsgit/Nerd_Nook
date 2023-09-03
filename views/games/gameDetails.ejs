@@ -1,0 +1,37 @@
+<!-- views/games/gameDetails.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <style>
+        .game-details-container {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            flex-direction: column;
+            top: 30vmin;
+            left: 50vmin;
+            width: 400px;
+            border: 2px solid black;
+        }
+        h2 {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <% include ../partials/header %>
+
+    <div class="game-details-container">
+        <h2>Game Details</h2>
+        <h3>Title: <%= game.title %></h3>
+        <p>Price: <%= game.price %></p>
+        <p>Genre: <%= game.genre %></p>
+        <p>Developer: <%= game.developer %></p>
+        <p>Publisher: <%= game.publisher %></p>
+        <!-- Add more game details as needed -->
+    </div>
+
+    <% include ../partials/footer %>
+</body>
+</html>

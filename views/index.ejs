@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nerd Nook</title>
+    <style>
+
+        body {
+            background-image: url('https://wallpaperset.com/w/full/b/e/e/284635.jpg');
+            background-size: cover;
+        }
+
+        .home-container {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            top: 30vmin;
+            left: 30vmin;
+            flex-direction: column;
+            max-width: 600px;
+        }
+        h2 {
+            margin-bottom: 4vmin;
+            color: #e4000f;
+            text-shadow: 
+                -1px -1px 0 white, /* Top-left white shadow */
+                1px -1px 0 white, /* Top-right white shadow */
+                -1px 1px 0 white, /* Bottom-left white shadow */
+                1px 1px 0 white; /* Bottom-right white shadow */
+            font-size: 30px;
+        }
+        p {
+            font-size: 20px;
+            color: #e4000f;
+            text-shadow: 
+                -1px -1px 0 white, /* Top-left white shadow */
+                1px -1px 0 white, /* Top-right white shadow */
+                -1px 1px 0 white, /* Bottom-left white shadow */
+                1px 1px 0 white; /* Bottom-right white shadow */
+        }
+    </style>
+</head>
+<body>
+    <% include partials/header %>
+    <div class="home-container">
+        <h2>Get Your Game On!</h2>
+        <p>Welcome to Nerd Nook, your ultimate destination for digital gaming. Discover a world of thrilling adventures, epic battles, and endless fun with our handpicked collection of top-rated games. And here's the best part: Enjoy a fantastic 20% off on all games, sitewide!</p>
+        <p>Whether you're a seasoned gamer or just starting your journey, Nerd Nook has something for everyone. Dive into a diverse range of game genres, from heart-pounding action to mind-bending puzzles. Don't miss out on this limited-time offer. Start exploring our incredible game library today!</p>
+    </div>
+    <% include partials/footer %>
+</body>
+</html>
