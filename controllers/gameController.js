@@ -11,7 +11,7 @@ async function createGame(req, res) {
     const {
       title,
       price,
-      reviews,
+      review,
       description,
       genre,
       developer,
@@ -23,7 +23,7 @@ async function createGame(req, res) {
     const newGame = new Game({
       title,
       price,
-      reviews,
+      review,
       description,
       genre,
       developer,

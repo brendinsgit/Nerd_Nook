@@ -127,7 +127,6 @@ h1 {
 .contact-container {
   display: flex;
   position: relative;
-  /* justify-content:flex-start */
   
 }
 
