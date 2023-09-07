@@ -16,6 +16,7 @@
                     <p>Genre: <%= game.genre %></p>
                     <p>Developer: <%= game.developer %></p>
                     <p>Publisher: <%= game.publisher %></p>
+                    <p>Review: <%= game.review %></p>
                     <!-- Display the delete button and edit button only for logged-in users -->
                     <% if (user) { %>
                         <form action="/games/delete/<%= game._id %>" method="POST">
@@ -26,12 +27,13 @@
                         <form action="/games/edit/<%= game._id %>" method="GET">
                             <button type="submit">Edit</button>
                         </form>                        
+                        <a href="/games/<%= game._id %>">Game Details</a>
                     <% } %>
                 </li>
             <% }); %>
         </ul>
     </div>
 
-    <% include ../partials/footer %>
+    <!-- <% include ../partials/footer %> -->
 </body>
 </html>

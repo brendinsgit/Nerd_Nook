@@ -18,7 +18,7 @@ var aboutRouter = require('./routes/about');
 var contactRouter = require('./routes/contact');
 var ordersRouter = require('./routes/orders');
 var gamesRouter = require('./routes/games');
-
+var reviewRouter = require('./controllers/reviewControllers');
 var app = express();
 
 // view engine setup
@@ -56,9 +56,9 @@ app.use('/users', usersRouter);
 app.use('/about', aboutRouter);
 app.use('/contact', contactRouter);
 app.use('/orders', ordersRouter);
-
-
 app.use('/games', gamesRouter);
+app.use('/reviews', reviewRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

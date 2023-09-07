@@ -1,6 +1,6 @@
-// models/game.js
 const mongoose = require('mongoose');
-
+const Schema = mongoose.Schema
+const reviewSchema = require('./review')
 const gameSchema = new mongoose.Schema({
   title: {
     type: String,
@@ -9,10 +9,6 @@ const gameSchema = new mongoose.Schema({
   price: {
     type: Number,
     required: true,
-  },
-  reviews: {
-    type: Number,
-    default: 0,
   },
   description: {
     type: String,
@@ -34,7 +30,12 @@ const gameSchema = new mongoose.Schema({
     type: Date,
     required: true,
   },
-});
+  owner: {
+    type: Schema.Types.ObjectId,
+    ref: 'User'
+},
+  reviews: [reviewSchema]
+}, { timestamps: true })
 
 const Game = mongoose.model('Game', gameSchema);
 

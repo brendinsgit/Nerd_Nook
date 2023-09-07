@@ -11,7 +11,6 @@ async function createGame(req, res) {
     const {
       title,
       price,
-      review,
       description,
       genre,
       developer,
@@ -19,28 +18,25 @@ async function createGame(req, res) {
       releaseDate,
     } = req.body;
 
-    
     const newGame = new Game({
       title,
       price,
-      review,
       description,
       genre,
       developer,
       publisher,
-      releaseDate,
+      releaseDate, 
     });
 
-    
     await newGame.save();
 
-   
-    res.status(201).json({ message: 'Game created successfully', game: newGame });
+    res.render(201).json({ message: 'Game created successfully', game: newGame });
   } catch (error) {
     console.error('Error creating game:', error);
-    res.status(500).json({ message: 'Error creating game' });
+    res.render('200');
   }
-};
+}
+
 
 
 async function deleteGame(req, res) {

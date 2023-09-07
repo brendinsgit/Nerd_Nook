@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title><%= title %></title>
+    <title><%= game.title %></title>
     <style>
         .game-details-container {
             display: flex;
@@ -17,6 +17,10 @@
         h2 {
             text-decoration: underline;
         }
+        div.review-section {
+            display: flex;
+            position: relative;
+        }
     </style>
 </head>
 <body>
@@ -29,9 +33,14 @@
         <p>Genre: <%= game.genre %></p>
         <p>Developer: <%= game.developer %></p>
         <p>Publisher: <%= game.publisher %></p>
-        <!-- Add more game details as needed -->
-    </div>
+       
 
-    <% include ../partials/footer %>
+        <form action="/games/reviews/<%= game._id %>" method="POST">
+            <label for="review">Add a Review:</label>
+            <textarea id="review" name="reviews" rows="4" cols="50" required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>     
+    </div>
+ 
 </body>
 </html>
