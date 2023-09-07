@@ -19,7 +19,7 @@ router.post('/reviews/:id', (req, res) => {
       // save the game
       .then(game => {
         game.reviews.push(req.body)
-
+        
           return game.save()
       })
       // redirect
@@ -39,9 +39,10 @@ router.get('/new', function(req, res, next) {
 router.get('/:id', (req, res) => {
   // Fetch the game details
   Game.findById( req.params.id )
+    .populate('reviews.author')
     .then(game => {
-      console.log(game);
-      res.render('games/gameDetails'), { game }
+      console.log('reviews', game.reviews);
+      res.render('games/gameDetails', { game }) 
     })
     .catch (err => {
     console.error(err);

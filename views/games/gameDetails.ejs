@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title><%= game.title %></title>
+    <title> Game Title </title>
     <style>
         .game-details-container {
             display: flex;
@@ -33,11 +33,15 @@
         <p>Genre: <%= game.genre %></p>
         <p>Developer: <%= game.developer %></p>
         <p>Publisher: <%= game.publisher %></p>
+        <p>Reviews:</p>
+         <% game.reviews.forEach(review => { %>
+            <%= review.note %>
+            <% }) %>
        
 
-        <form action="/games/reviews/<%= game._id %>" method="POST">
+        <form action="/reviews/<%= game._id %>" method="POST">
             <label for="review">Add a Review:</label>
-            <textarea id="review" name="reviews" rows="4" cols="50" required></textarea>
+            <textarea id="review" name="note" rows="4" cols="50" required></textarea>
             <button type="submit">Submit Review</button>
         </form>     
     </div>

@@ -13,10 +13,10 @@ const router = express.Router()
 //////////////////////////////
 
 // Create
-router.post('/reviews', (req, res) => {
+router.post('/:gameId', (req, res) => {
     // need to assign owner
     req.body.author = req.user._id
-
+    console.log(req.body)
     // find the game
     Game.findById(req.params.gameId)
         // push the review into the reviews array
@@ -36,42 +36,42 @@ router.post('/reviews', (req, res) => {
 
 // edit
 // hint for subdoc update -> render a form similar to how we updated the game
-router.get('/edit/:id', (req, res) => {
-    res.send('commend edit form')
-})
+// router.get('/edit/:id', (req, res) => {
+//     res.send('commend edit form')
+// })
 
 // Update
 // update route should follow the same steps as delete, but with update instead of delete
 // look up update methods in the mongoose docs
-router.patch('/:id', (req, res) => {
-    res.send('edit review route')
-})
+// router.patch('/:id', (req, res) => {
+//     res.send('edit review route')
+// })
 
 // Delete
-router.delete('/:gameId/:reviewId', (req, res) => {
-    const fId = req.params.gameId
-    const cId = req.params.reviewId
-    // find the game
-    Game.findById(fId)
-        .then(game => {
-            // isolate the review
-            const theReview = game.reviews.id(cId)
-            // check for ownership
-            if (req.user && theReview.author == req.user.id) {
-                // run a document method to remove the review(could also use .remove())
-                theReview.deleteOne()
-                // save the parent model
-                return game.save()
-            } else {
-                res.send('something went wrong')
-            }
-        })
-        .then(game => {
-            // redirect to the show page
-            res.redirect(`/games/${game._id}`)
-        })
-        .catch(error => console.error)
-})
+// router.delete('/:gameId/:reviewId', (req, res) => {
+//     const fId = req.params.gameId
+//     const cId = req.params.reviewId
+//     // find the game
+//     Game.findById(fId)
+//         .then(game => {
+//             // isolate the review
+//             const theReview = game.reviews.id(cId)
+//             // check for ownership
+//             if (req.user && theReview.author == req.user.id) {
+//                 // run a document method to remove the review(could also use .remove())
+//                 theReview.deleteOne()
+//                 // save the parent model
+//                 return game.save()
+//             } else {
+//                 res.send('something went wrong')
+//             }
+//         })
+//         .then(game => {
+//             // redirect to the show page
+//             res.redirect(`/games/${game._id}`)
+//         })
+//         .catch(error => console.error)
+// })
 
 
 ////////////////////////////
